@@ -1,1 +1,3 @@
-console.log('Hello world!');
+import primes from './index';
+
+console.log(primes(120));

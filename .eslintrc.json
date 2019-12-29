@@ -8,7 +8,8 @@
     "airbnb",
     "plugin:@typescript-eslint/recommended",
     "plugin:import/typescript",
-    "plugin:jest/all"
+    "plugin:jest/all",
+    "plugin:prettier/recommended"
   ],
   "globals": {
     "Atomics": "readonly",

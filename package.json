@@ -11,14 +11,17 @@
     "@typescript-eslint/parser": "^2.13.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "husky": "^3.1.0",
     "jest": "^24.9.0",
     "parcel": "^1.12.4",
+    "prettier": "^1.19.1",
     "ts-jest": "^24.2.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
@@ -32,7 +35,8 @@
     "type-check:watch": "tsc --noEmit --watch",
     "lint": "eslint './src/**/*.{ts,tsx}'",
     "lint:fix": "yarn lint --fix",
-    "cli": "ts-node src/cli.ts"
+    "cli": "ts-node src/cli.ts",
+    "format": "prettier --write './src/**/*.{ts,tsx}'"
   },
   "husky": {
     "hooks": {

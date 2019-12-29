@@ -7,6 +7,7 @@ A starter template for personal use, uses:
   * [Eslint](https://eslint.org/), for linting
   * [Jest](https://jestjs.io/), for testing
   * [Editorconfig](https://editorconfig.org/), for the editor configuration
+  * [Prettier](https://prettier.io/), code formatter
   * [Husky](https://github.com/typicode/husky), for managing the pre-commit hooks
 
 ## Before starting:
@@ -47,6 +48,8 @@ And for the types:
 
 Also, if you want HMR switch to the following parcel version, because of a [Bug](https://github.com/parcel-bundler/parcel/issues/2894), with the reloading of a React typescript project. Just change the version to `0.11.0` in the `package.json`
 
+The repository is already configured to be able to use `jsx` in `tsx` files.
+
 # Commands
 
 ### Starting/Building
@@ -61,6 +64,10 @@ Also, if you want HMR switch to the following parcel version, because of a [Bug]
 ### Testing/linting
 
 - `yarn lint`: Start the linter to check if the code adheres to the linter.
-- `yarn lint:fix` Starts the linter and autofixes any problems it sees
+- `yarn lint:fix` Uses the linter to autofix the problems the best it can
 - `yarn test`: Run the unit tests
+- `yarn format`: Run prettier to format the files
 
+## ESlint
+
+The eslint config is based on the the [airbnb](https://github.com/airbnb/javascript) style guide 

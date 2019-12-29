@@ -1,8 +1,9 @@
-import hello from './index';
+import primes from './index';
 
-describe('Hello component', () => {
+describe('Prime number component', () => {
   it('says hello', () => {
     expect.assertions(1);
-    expect(hello()).toStrictEqual('Hello!');
+    const primeNumbers = primes(11);
+    expect(primeNumbers).toStrictEqual([2, 3, 5, 7, 11]);
   });
 });
